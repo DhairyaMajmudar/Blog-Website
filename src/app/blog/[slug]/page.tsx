@@ -3,6 +3,8 @@ import { blogPage } from "@/lib/type";
 import Image from "next/image";
 import { PortableText } from "next-sanity";
 
+export const revalidate = 30; // Revildate after 30 sec
+
 async function getData(slug: string) {
   const query = `
 *[_type == 'blog' && slug.current == '${slug}']{

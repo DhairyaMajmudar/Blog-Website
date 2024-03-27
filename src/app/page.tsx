@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 30; // Revildate after 30 sec
+
 async function getdata() {
   const query = `
   *[_type == 'blog'] | order(_createdAt desc){
