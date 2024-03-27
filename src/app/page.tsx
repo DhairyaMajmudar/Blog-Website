@@ -22,8 +22,6 @@ async function getdata() {
 const Home = async () => {
   const data: blogCart[] = await getdata();
 
-  console.log(data);
-
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">

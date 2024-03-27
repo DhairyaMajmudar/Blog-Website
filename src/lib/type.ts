@@ -4,3 +4,10 @@ export interface blogCart {
   currentSlug: string;
   Image: any;
 }
+
+export interface blogPage {
+  currentSlug: string;
+  title: string;
+  content: any;
+  Image: any;
+}
