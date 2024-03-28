@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -27,7 +31,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="max-w-2xl mx-auto px-4">{children}</main>
+          <main className="max-w-2xl mx-auto px-4">
+            {children}
+            <SpeedInsights />
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
