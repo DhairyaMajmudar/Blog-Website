@@ -16,13 +16,13 @@ The UI of website is kept simple and minimalistic to enhance reader experenice r
 
 1. Next.js 14
 2. Typescript
-3. Tailwind
-4. Shadcn
+3. Tailwind CSS
+4. Shadcn UI
 5. Sanity CMS
 
 ## Blogs included
 
-1.Season of KDE Blog #1
+1. Season of KDE Blog #1
 
 ## Deployed Website
 
