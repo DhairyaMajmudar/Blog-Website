@@ -10,8 +10,8 @@ async function getData(slug: string) {
 *[_type == 'blog' && slug.current == '${slug}']{
   title ,
   "Image":titleImage.asset._ref ,
-  content,
   "currentSlug":slug.current,    
+  content,
 }[0]
 `;
 
@@ -37,15 +37,31 @@ const page = async ({ params }: { params: { slug: string } }) => {
           width={800}
           height={800}
           priority
-          className="rounded-lg mt-8 border "
+          className="rounded-lg mt-8 border border-slate-400"
         ></Image>
 
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
-          <PortableText value={data.content} />
+          <PortableText value={data.content} components={BlogImage} />
         </div>
       </div>
     </>
   );
+};
+
+const BlogImage = {
+  types: {
+    image: ({ value }: any) => (
+      <div className="flex justify-center">
+        <Image
+          src={urlFor(value).url()}
+          alt="Title Image"
+          height={600}
+          width={600}
+          className="rounded-sm m-0  border-slate-400  border object-cover"
+        />
+      </div>
+    ),
+  },
 };
 
 export default page;
