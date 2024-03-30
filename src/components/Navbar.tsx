@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
+import { Github } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,13 @@ const Navbar = () => {
         <Link href={"/"} className="font-bold text-3xl uppercase">
           Dhairya&#39;s <span className="text-primary">Blog</span>
         </Link>
-        <ModeToggle />
+
+        <div className="flex flex-row justify-center items-center gap-7">
+          <Link href={"https://github.com/DhairyaMajmudar/Blog-Website/"}>
+            <Github />
+          </Link>
+          <ModeToggle />
+        </div>
       </nav>
     </>
   );
