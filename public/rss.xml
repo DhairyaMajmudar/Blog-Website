@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Blog posts | RSS Feed</title>
+        <link>https://dhairya-blog.vercel.app</link>
+        <description>Welcome to this blog posts!</description>
+        <lastBuildDate>Tue, 02 Apr 2024 17:57:01 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Blog posts | RSS Feed</title>
+            <url>https://dhairya-blog.vercel.app/logo.png</url>
+            <link>https://dhairya-blog.vercel.app</link>
+        </image>
+        <copyright>All rights reserved 2024, Ibas</copyright>
+    </channel>
+</rss>

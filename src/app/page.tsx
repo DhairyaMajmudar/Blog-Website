@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import generateRssFeed from "../../generateRSSFeed";
 
 export const revalidate = 30; // Revildate after 30 sec
 
@@ -23,7 +24,7 @@ async function getdata() {
 
 const Home = async () => {
   const data: blogCart[] = await getdata();
-
+  generateRssFeed();
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
