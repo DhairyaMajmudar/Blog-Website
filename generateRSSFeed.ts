@@ -6,12 +6,10 @@ export default async function generateRssFeed() {
 
   const feedOptions = {
     title: "Blog posts | RSS Feed",
-    description: "Welcome to this blog posts!",
+    description: "Welcome to Dhairya's Blog",
     id: site_url,
     link: site_url,
-    image: `${site_url}/logo.png`,
-    favicon: `${site_url}/favicon.png`,
-    copyright: `All rights reserved ${new Date().getFullYear()}, Ibas`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, Dhairya`,
     generator: "Feed for Node.js",
     feedLinks: {
       rss2: `${site_url}/rss.xml`,
