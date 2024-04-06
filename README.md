@@ -14,7 +14,7 @@ Along with these Vercel's Web Analytics package is also integrated in the websit
 2. `npm i` installs the dependencies.
 3. `npm run dev` runs the website preview in localhost.
 
-## Make command installtion
+## Make command installation
 
 1. Fork and clone the repo. in local machine.
 2. `make serve` this command will install the dependencies and runs the website preview server.
