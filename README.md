@@ -1,10 +1,10 @@
 ## Dhairya's Blog Website
 
-Dhairya's Blog website is blog website in which several blogs written by me is hoseted and can be read by users.
+Dhairya's Blog website is blog website in which several blogs written by me is hosted and can be read by users.
 
 This Blog website is powered by modern web technologies which includes Next.js, Typescript, Tailwind, Shadcn UI and Sanity CMS.
 
-The UI of website is kept simple and minimalistic to enhance reader experenice reading the blog posts. Along with taking care of latest UI and typographical trends.
+The UI of website is kept simple and minimalistic to enhance reader experience reading the blog posts. Along with taking care of latest UI and typographical trends.
 
 Along with these Vercel's Web Analytics package is also integrated in the website to get user web analytics.
 
