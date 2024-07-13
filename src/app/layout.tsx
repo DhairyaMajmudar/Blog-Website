@@ -25,7 +25,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
-      <body className={clsx(inter.className, "dark:bg-black")}>
+      <body
+        className={clsx(
+          inter.className,
+          "dark:bg-gradient-to-tl from-black to-slate-900 "
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

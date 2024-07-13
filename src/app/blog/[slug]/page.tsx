@@ -26,22 +26,26 @@ const page = async ({ params }: { params: { slug: string } }) => {
     <>
       <div className="mt-6 ">
         <h1>
-          <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl ">
+          <span className="mt-2 block text-3xl text-center leading-8 text-gradient-to-r from-slate-50 to-slate-900 font-bold tracking-tight sm:text-4xl ">
             {data.title}
           </span>
         </h1>
 
-        <Image
-          src={urlFor(data.Image).url()}
-          alt="Image"
-          width={800}
-          height={800}
-          priority
-          className="rounded-lg mt-8 border border-slate-400"
-        ></Image>
+        <div className="flex justify-center">
+          <Image
+            src={urlFor(data.Image).url()}
+            alt="Image"
+            width={500}
+            height={500}
+            priority
+            className="rounded-lg mt-8 border border-slate-400"
+          ></Image>
+        </div>
 
-        <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
-          <PortableText value={data.content} components={BlogImage} />
+        <div className="flex flex-row">
+          <div className="mt-20 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+            <PortableText value={data.content} components={BlogImage} />
+          </div>
         </div>
       </div>
     </>
