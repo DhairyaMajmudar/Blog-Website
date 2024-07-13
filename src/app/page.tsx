@@ -27,7 +27,8 @@ const Home = async () => {
   generateRssFeed();
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5"> */}
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-5">
         {data.map((post, id) => {
           return (
             <>
