@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+import clsx from "clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={clsx(inter.className, "dark:bg-black")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

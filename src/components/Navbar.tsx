@@ -1,11 +1,20 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { Github } from "lucide-react";
+import { Cuprum } from "next/font/google";
+import clsx from "clsx";
+
+const inter = Cuprum({ subsets: ["latin"] });
 
 const Navbar = () => {
   return (
     <>
-      <nav className="max-w-2xl mx-auto px-4 py-5 w-full relative flex items-center justify-between">
+      <nav
+        className={clsx(
+          inter.className,
+          "max-w-6xl mx-auto px-4 py-5 w-full relative flex items-center justify-between"
+        )}
+      >
         <Link href={"/"} className="font-bold text-3xl uppercase">
           Dhairya&#39;s <span className="text-primary">Blog</span>
         </Link>
